@@ -5,6 +5,5 @@ from django.shortcuts import render
 from django.shortcuts import render
 
 def home(request):
-    string = u"DJango is not funny!"
-    return render(request, 'home.html', {'string':string})
-
+    TutorialList = ["Rice", "Noodle", "Spring roll", "Steamed Stuffed Bun", "Dumpling"]
+    return render(request, 'home.html', {'TutorialList': TutorialList})
