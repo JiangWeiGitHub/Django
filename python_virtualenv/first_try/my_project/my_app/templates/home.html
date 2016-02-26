@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome to My Site</title>
+</head>
+<body>
+{% for i in myList %}
+{{ i }} {%if not forloop.last%},{%endif%}
+{% endfor %}
+</body>
+</html>
