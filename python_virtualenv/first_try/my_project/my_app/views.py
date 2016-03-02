@@ -17,6 +17,7 @@
 #    c = int(a) + int(b)
 #    return HttpResponse(u"Welcome to my site!" + " a + b = "  + str(c))
 
+/*
 # coding:utf-8
 from django.shortcuts import render
 from django.http import HttpResponse
@@ -36,5 +37,21 @@ def index(request):
     else:
         form = AddForm()
     return render(request, 'index.html', {'form': form})
+*/
+
+# -*- coding: utf-8 -*-
+ 
+from __future__ import unicode_literals
+ 
+import json
+from django.shortcuts import render
+ 
+def home(request):
+    List = ['hello', 'world']
+    Dict = {'site': 'mySite', 'author': 'John'}
+    return render(request, 'home.html', {
+            'List': json.dumps(List),
+            'Dict': json.dumps(Dict)
+        })
 
 
