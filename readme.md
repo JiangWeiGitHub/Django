@@ -1,2 +1,2 @@
-# no longer be maintained!
-## [Please see another page](https://github.com/JiangWeiGitHub/AllInOne)
+### No longer be maintained!
+##### [See another page!](https://github.com/JiangWeiGitHub/AllInOne)
